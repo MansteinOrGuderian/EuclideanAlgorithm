@@ -35,7 +35,7 @@ void Extended_Euclidean_Algorithm_Info() {
 	std::cout << "When |u_{i+1}| = a and |v_{i+1}| = b, where || is absolute value, u = u_i, v = v_i\n";
 }
 
-long long int Extended_Euclidean_Algorithm(long long int& first_number, long long int& second_number) {
+void Extended_Euclidean_Algorithm(long long int& first_number, long long int& second_number) {
 	long long int r_i_minus_one = first_number, r_i = second_number, q(0), r_i_plus_one(1);
 	std::vector<long long int> r_i_minus_one_vector, r_i_vector, q_vector, r_i_plus_one_vector;
 	while (r_i_plus_one != 0) {
@@ -78,6 +78,4 @@ long long int Extended_Euclidean_Algorithm(long long int& first_number, long lon
 		std::cout << "a and b numbers aren't coprime integers\n";
 		std::cout << "u != a^{-1} mod b and v != b^{-1} mod a\n";
 	}
-
-	return 0;
 }
