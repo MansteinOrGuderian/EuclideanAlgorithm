@@ -1,11 +1,12 @@
 #include "Header.h"
 
 int main() {
-	std::cout << "----- Euclidean Algorithm -----";
+	//Euclidean_Algorithm_Info();
+	Extended_Euclidean_Algorithm_Info();
 	long long int first_number(0), second_number(0);
-	std::cout << "\nEnter numbers\n";
+	std::cout << "Enter numbers\n";
 	std::cin >> first_number >> second_number;
-	std::cout << Euclidean_Algorithm(first_number, second_number);
+	std::cout << Extended_Euclidean_Algorithm(first_number, second_number);
 	//
 	//
 	//
